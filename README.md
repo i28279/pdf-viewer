@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Imrab</h1>
+<h1 align="center">Hi 👋, I'm Imran</h1>
 <h3 align="center">A passionate student of developing from Bangladesh</h3>
 
 - 🌱 I’m currently learning **Js, Bootstrap, NodeJs**
