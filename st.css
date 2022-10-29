@@ -1,0 +1,134 @@
+/* css */
+* {
+		margin: 0;
+		padding: 0;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
+}
+/* *8 */
+/* Input Box */
+.outerBox {
+		position: relative;
+		max-width: 400px;
+		margin: auto;
+}
+#input-box {
+		height: 100px;
+		padding: 5px;
+		border: 2px solid #83d77d;
+		border-radius: 10px;
+		margin-top: 50px;
+		margin-bottom: 20px;
+		overflow: scroll;
+		color: #c66a21;
+		word-break: break-word;
+}
+#inputs {
+		display: inline-block;
+		outline: 0;
+		padding-bottom: 2px;
+		border-bottom: 2px double blue;
+		line-height: 1.5;
+		white-space: pre;
+}
+#inputs:after {
+		content: "|";
+		padding-left: 0.5px;
+		color: teal;
+		animation: cursor 1s linear infinite;
+}
+@keyframes cursor {
+		0% {opacity: 0;}
+		50% {opacity: 1;}
+		100% {opacity: 0;}
+}
+.totalLetters, .ontouch {
+		position: absolute;
+		top: -27px;
+		color: #fff;
+		font-weight: bold;
+		padding: 5px 10px;
+		border-radius: 5px 5px 0 0;
+}
+.totalLetters {
+		left: 10px;
+		background: #bc4e8c;
+}
+.ontouch {
+		right: 10px;
+		background: #a8831c;
+}
+/* ** */
+/* Main */
+.keyboard {
+		background: url("bg.jpg") no-repeat;
+		background-size: 100% 100%;
+		padding: 7px 5px;
+		max-width: 400px;
+		margin: auto;
+		overflow: visible;
+		box-shadow: 0 0 5px 3px gray;
+		border-radius: 3px;
+}
+/* ** */
+/* All Rows */
+.rows {
+		display: flex;
+		justify-content: space-around;		
+}
+.rows div {
+		background: rgba(255,255,255,0.5);
+		padding: 15px 0;		
+		margin: 5px 1px;
+		width: 10%;
+		border-radius: 5px;
+		text-align: center;
+		position: relative;
+}
+/* Second text */
+.rows span {
+		position: absolute;
+		right: 3px;
+		bottom: 3px;
+		color: brown;
+		font-size: 15px;
+}
+
+.row3 {margin: auto 15px;}
+.row3 div {width: 11.1%;}
+/* ** */
+/* Caps, Delete, Symbol, Language and Enter */
+#capS, #delT, #sym, #enter {width: 15%;}
+#capS {
+		background: url("caps (2).png") no-repeat, rgba(255,255,255,0.5);
+		background-size: 90% 80%;
+		background-position: center;
+}	
+#delT {
+		background: url("del.png") no-repeat, rgba(255,255,255,0.5);
+		background-size: 50% 50%;
+		background-position: center;
+}	
+#world {
+		background: url("world.png") no-repeat, rgba(255,255,255,0.5);
+		background-size: 50% 50%;
+		background-position: center;
+}	
+#enter {
+		background: url("enter.png") no-repeat, rgba(255,255,255,0.5);
+		background-size: 50% 50%;
+		background-position: center;
+}	
+#capS:active, #delT:active, #world:active, #enter:active {filter: brightness(50%);}
+/* SpaceBar */
+#space {width: 40%;}
+
+/* Rows Div on active */
+.rows div:active {
+		transition: 0.2s;
+		background: rgba(255,255,255,0.2);
+		background: #688722;
+		color: #fff;
+		transform: translateY(-50px);
+}
